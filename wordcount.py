@@ -1,16 +1,16 @@
 # put your code here.
-test = "test.txt"
-twain = "twain.txt"
 
 def word_counting(log_file):
     """Counts each time a word appears in the txt"""
 
-    log_file = open(test)
+    text = open(log_file)
+   
+
     # empty dictionary
     word_bank = {}
 
     #for every word in the txt file
-    for word in log_file: #for each line in the txt file
+    for word in text: #for each line in the txt file
         word = word.rstrip() #remove all white spaces to the right...
         sentence = word.split() #put each word individually in the sentence list
 
